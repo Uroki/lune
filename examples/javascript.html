@@ -1,0 +1,17 @@
+<button lune="button"
+  onclick="Lune.Alert({ title: 'Alert Title', body: 'Alert Body', buttons: [{ title:'Close', handle: (self) => slef.close() }] });">
+  Show Alert
+</button>
+<button lune="button" onclick="Lune.Message('Message Text', 'Message Type', 50000);">Show Message</button>
+
+<!--
+  Lune.Alert(
+    {
+      title: text,
+      body: text|html,
+      buttons: array of objects { title, handle } => [{ title:'Close', handle: (self) => slef.close() }]
+    }
+  );
+
+  Lune.Message(title: text, type: text[error, success, warn, info], timeout);
+-->

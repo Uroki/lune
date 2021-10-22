@@ -1,0 +1,48 @@
+[lune="rt"] {
+  padding: 48px;
+  display: inline-block;
+  background: $sc-color-1;
+  border-radius: 100%;
+  margin: 120px;
+  outline-color: $sc-color-2;
+  outline-offset: 16px;
+  outline-style: solid;
+  outline-width: 2px;
+  box-shadow: 0 0 320px 48px $sc-color-2;
+  animation: rt 2s infinite alternate ease-in-out;
+}
+
+@keyframes rt {
+  0% {
+    outline-offset: 4px;
+  }
+  100% {
+    outline-offset: 24px;
+  }
+}
+
+[lune~="squit"] > span {
+  position: absolute;
+  padding: 6px;
+  background-color: transparent;
+  border: 2px solid $pr-color-1;
+  border-radius: 4px;
+  box-shadow: 0 0 4px $pr-color-2;
+}
+
+[lune~="squit"] > span:nth-child(1) {
+  top: 24px;
+  left: 24px;
+}
+[lune~="squit"] > span:nth-child(2) {
+  top: 240px;
+  left: 80%;
+}
+[lune~="squit"] > span:nth-child(3) {
+  top: 48px;
+  left: 90%;
+}
+[lune~="squit"] > span:nth-child(4) {
+  top: 480px;
+  left: 25%;
+}

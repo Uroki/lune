@@ -1,0 +1,183 @@
+[lune~="card"] {
+  overflow: hidden;
+  margin: 24px;
+  border-radius: 2px;
+  display: flex;
+  flex-flow: column;
+  outline-color: #e6e6fa14;
+  outline-style: dashed;
+  outline-offset: 4px;
+  outline-width: 2px;
+  backdrop-filter: blur(6px);
+}
+
+[lune~="card"] > img {
+  width: 100%;
+}
+
+[lune~="card"] > h1 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 8px;
+  text-align: center;
+}
+
+[lune~="card"] > h2 {
+  font-size: 13px;
+  text-align: center;
+  padding: 0 8px 8px;
+}
+
+[lune~="card"] > span {
+  font-size: 11px;
+  display: block;
+  text-align: center;
+  margin: 4px;
+}
+
+[lune~="box"] {
+  background-color: #0000000f;
+  overflow: hidden;
+  margin: 24px;
+  border-radius: 2px;
+  display: flex;
+  flex-flow: column;
+  outline-color: $pr-color-3;
+  outline-style: dashed;
+  outline-width: 2px;
+  line-height: 2;
+  padding: 24px 64px;
+  text-align: center;
+  font-size: 15px;
+  backdrop-filter: blur(6px);
+}
+
+[lune~="panel"] {
+  background-color: #0000000f;
+  border-radius: 2px;
+  margin: 24px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  backdrop-filter: blur(6px);
+}
+
+[lune~="panel"] > h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 12px;
+  font-weight: 200;
+}
+
+[lune~="panel"] > h2 {
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+}
+
+[lune~="message"] {
+  position: relative;
+  background-color: #0000000f;
+  width: fit-content;
+  border-radius: 2px;
+  margin: 12px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 1px #ffffff24;
+}
+
+[lune~="message"]::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: -1px;
+  background: $gr-color;
+  border-radius: 2px;
+}
+
+[lune~="alert"] {
+  position: relative;
+  background-color: #0000000f;
+  width: fit-content;
+  border-radius: 2px;
+  margin: 12px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-size: 14px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 1px #ffffff24;
+}
+
+[lune~="alert"]::after {
+  content: "";
+  background-color: $pr-color-1;
+  position: absolute;
+  width: 2px;
+  height: 75%;
+  left: -1px;
+  background: $gr-color;
+  border-radius: 2px;
+}
+
+[lune~="alert"][lune~="rtl"]::after {
+  left: unset;
+  right: -1px;
+}
+
+[lune~="alert"][lune~="success"]::after,
+[lune~="message"][lune~="success"]::after {
+  background: $success-color;
+}
+[lune~="alert"][lune~="error"]::after,
+[lune~="message"][lune~="error"]::after {
+  background: $error-color;
+}
+[lune~="alert"][lune~="info"]::after,
+[lune~="message"][lune~="info"]::after {
+  background: $info-color;
+}
+[lune~="alert"][lune~="warn"]::after,
+[lune~="message"][lune~="warn"]::after {
+  background: $warn-color;
+}
+
+[lune~="code"] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 2;
+  padding: 12px 24px;
+  backdrop-filter: blur(6px);
+  margin: 24px;
+  width: -webkit-fill-available;
+  border-radius: 4px;
+  box-shadow: 0 0 1px #ffffff24;
+  background-color: #0000000f;
+}
+[lune~="code"] > code {
+  font-family: "Major Mono Display", "Source Code Pro", consolas, monospace;
+  overflow: auto;
+  font-size: 12px;
+  tab-size: 2;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 2.4;
+}
+
+[lune~="code"] > code * {
+  font-family: "Major Mono Display", "Source Code Pro", consolas, monospace;
+}

@@ -1,0 +1,165 @@
+[lune~="temp:alert"] {
+  animation: scale-in-center 0.24s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-image: linear-gradient(45deg, #2a2b2d2f, #1a1b1d2f);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 64px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 2px #ffffff24;
+  max-width: 240px;
+}
+
+[lune~="temp:alert"]::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: -1px;
+  background: $gr-color;
+  border-radius: 2px;
+}
+
+[lune~="temp:alert"] > div:nth-child(1) {
+  padding: 0 12px 12px;
+  font-size: 20px;
+}
+
+[lune~="temp:alert"] > div:nth-child(2) {
+  padding: 12px;
+  font-size: 14px;
+}
+
+[lune~="temp:alert"] > div:nth-child(3) {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[lune~="temp:alert"] > div:nth-child(3) > button {
+  margin: 0 6px;
+}
+
+[lune~="temp:message"] {
+  animation: scale-in 0.24s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  background-image: linear-gradient(45deg, #2a2b2d2f, #1a1b1d2f);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border-radius: 4px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 2px #ffffff24;
+  max-width: 240px;
+}
+
+[lune~="temp:message"] > button {
+  position: fixed;
+  top: 2px;
+  right: 2px;
+  border-radius: 4px;
+  background: #ffffff0f;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+}
+
+[lune~="temp:message"] > button:hover {
+  background: #ffffff1f;
+}
+
+[lune~="temp:message"] > button:active {
+  transform: scale(0.96);
+}
+
+[lune~="temp:message"]::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 2px;
+  left: -1px;
+  background: $gr-color;
+  border-radius: 2px;
+}
+
+[lune~="temp:message"][lune~="rtl"]::after {
+  left: unset;
+  right: -1px;
+}
+
+[lune~="temp:alert"][lune~="success"]::after,
+[lune~="temp:message"][lune~="success"]::after {
+  background: $success-color;
+}
+[lune~="temp:alert"][lune~="error"]::after,
+[lune~="temp:message"][lune~="error"]::after {
+  background: $error-color;
+}
+[lune~="temp:alert"][lune~="info"]::after,
+[lune~="temp:message"][lune~="info"]::after {
+  background: $info-color;
+}
+[lune~="temp:alert"][lune~="warn"]::after,
+[lune~="temp:message"][lune~="warn"]::after {
+  background: $warn-color;
+}
+
+[lune~="temp:alert"].hide {
+  animation: scale-out-center 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+[lune~="temp:message"].hide {
+  animation: scale-out 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0) translate(-100%, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-center {
+  0% {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0) translate(-100%, -100%);
+    opacity: 0;
+  }
+}
+@keyframes scale-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0) translate(-100%, -100%);
+    opacity: 0;
+  }
+}

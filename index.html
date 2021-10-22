@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uroki @ Lune UI</title>
+  <link rel="stylesheet" href="css/lune.css" />
+</head>
+
+<body>
+  <div lune="app">
+    <div lune="header flex column center padding:48 squit:4">
+      <div lune="nav">
+        <a href="#introduction">Intro</a>
+        <a href="#installation">Install</a>
+        <a href="#components">Components</a>
+        <a href="https://github.com/uroki/lune">Github</a>
+      </div>
+      <div lune="rt"></div>
+      <div lune="flex column center padding:8">
+        <h1 lune="font:24">Lune UI</h1>
+        <h2 lune="font:16 margin:16 width:320 space:2 capital align:center line:24 color:ffffff8f">
+          A lightweight and modern front-end framework for fast and pretty web interfaces.
+        </h2>
+      </div>
+    </div>
+    <div lune="body">
+      <a lune="title href space:6 font:16" href="#introduction">Intro</a>
+      <div id="introduction" lune="flex row wrap space:e space:2 align:center">
+        <div lune="box capital maxwidth:240 padding:24 font:11">
+          <b lune="font:18">Lune</b>
+          is a small CSS library used to create a pretty interface with short queries.
+        </div>
+        <div lune="box capital maxwidth:240 padding:24 font:11">
+          this library is open-source and this site is an example of the UI
+          <a href="https://github.com/uroki/lune" lune="button back:error">Source</a>
+        </div>
+      </div>
+      <a lune="title href space:6 font:16" href="#installation">Install</a>
+      <div id="installation" lune="font:14 space:2 align:center"></div>
+      <a lune="title href space:6 font:16" href="#components">Components</a>
+      <div id="components" lune="flex row center font:14 space:2 align:center">
+        <div lune="box font:24 padding:16">
+          Button
+          <div id="button" lune="flex  row space:e wrap">
+            <button lune="button">Button</button>
+            <button lune="button grad:info hover?grad:success">Info</button>
+            <button lune="button grad:error">Error</button>
+            <button lune="button grad:success">Success</button>
+            <button lune="button grad:warn">Warn</button>
+          </div>
+          <div lune="line"></div>
+          Input
+          <div id="input" lune="flex row space:e wrap">
+            <input type="text" lune="input" placeholder="Uroki Lune" />
+            <input type="text" lune="input error" placeholder="Wrong..." />
+          </div>
+          <div lune="line"></div>
+          Card
+          <div id="card" lune="flex  row space:e wrap">
+            <div lune="card width:240">
+              <img src="assets/images/fb79fb2bbe65429bb33832e845596709.png" alt="" />
+              <h1>Post Title</h1>
+              <h2>Post Desc</h2>
+              <span>2021.10.20 | 10:00 AM | 3 Min Read</span>
+              <a lune="button" href="#whatever">Read</a>
+            </div>
+            <div lune="card width:240">
+              <img src="assets/images/fb79fb2bbe65429bb33832e845596709.png" alt="" />
+              <h1>Post Title</h1>
+              <h2>Post Desc</h2>
+              <span>2021.10.20 | 10:00 AM | 3 Min Read</span>
+              <a lune="button grad:blue" href="#whatever">Read</a>
+            </div>
+          </div>
+          <div lune="line"></div>
+          Box
+          <div id="box" lune="flex  row space:e wrap">
+            <div lune="box">
+              Hello World
+              <a href="#" lune="button">Button</a>
+            </div>
+            <div lune="box">
+              Hello World
+              <a href="#" lune="button back:error">Button</a>
+            </div>
+          </div>
+          <div lune="line"></div>
+          Panel
+          <div id="panel" lune="flex row space:e wrap">
+            <div lune="panel grad:info">
+              <h1>Hello World</h1>
+              <h2>MEEEH..</h2>
+            </div>
+            <div lune="panel grad:error">
+              <h1>Hello World</h1>
+              <h2>MEEEH..</h2>
+            </div>
+            <div lune="panel grad:warn">
+              <h1>Hello World</h1>
+              <h2>MEEEH..</h2>
+            </div>
+            <div lune="panel grad:success">
+              <h1>Hello World</h1>
+              <h2>MEEEH..</h2>
+            </div>
+          </div>
+          <div lune="line"></div>
+          Message
+          <div id="message" lune="flex row space:e wrap">
+            <div lune="message">MESSAGE</div>
+            <div lune="message error">EMESSAGE RROR</div>
+            <div lune="message warn">MESSAGE WARN</div>
+            <div lune="message success">MESSAGE SUCCESS</div>
+            <div lune="message info">MESSAGE INFO</div>
+          </div>
+          <div lune="line"></div>
+          Alert
+          <div id="alert" lune="flex row space:e wrap">
+            <div lune="alert">ALERT</div>
+            <div lune="alert error">ALERT ERROR</div>
+            <div lune="alert warn">ALERT WARN</div>
+            <div lune="alert success">ALERT SUCCESS</div>
+            <div lune="alert info rtl">RTL ALERT INFO</div>
+          </div>
+          <div lune="line"></div>
+          JavaScript
+          <div id="javascript" lune="flex row space:e wrap">
+            <button lune="button" onclick="Lune.Alert({ title: 'Alert Title', body: 'Alert Body' });">
+              Show Alert
+            </button>
+            <button lune="button" onclick="Lune.Message('Message Text', 'Message Type', 50000);">
+              Show Message
+            </button>
+          </div>
+        </div>
+      </div>
+      <div lune="footer flex space:4 center line:64 back:0000001f color:ffffff8f font:14">Uroki RT &copy; 2021</div>
+    </div>
+    <script src="js/lune.js"></script>
+</body>
+
+</html>

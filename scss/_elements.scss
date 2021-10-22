@@ -1,0 +1,37 @@
+[lune~="button"] {
+  text-decoration: none;
+  background-color: $pr-color-3;
+  text-decoration: none;
+  padding: 0 12px;
+  border-radius: 4px;
+  margin: 12px auto;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+[lune~="button"]:hover {
+  opacity: 0.72;
+}
+
+[lune~="button"]:active {
+  transform: scale(0.96);
+}
+
+[lune~="input"] {
+  background-color: #0000000f;
+  border-radius: 2px;
+  margin: 4px;
+  padding: 10px 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 2px #ffffff24;
+}
+[lune~="input"]:hover {
+  background-color: #ffffff02;
+}
+[lune~="input"]:focus {
+  background-color: #ffffff06;
+  box-shadow: 0 0 2px #ffffff48;
+}
+[lune~="input"][lune~="error"] {
+  box-shadow: 0 0 2px #e55d4d;
+}

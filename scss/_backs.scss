@@ -1,0 +1,61 @@
+[lune~="grad:info"] {
+  background-image: $info-color;
+  text-shadow: 0 0 24px #0000008f;
+}
+[lune~="grad:error"] {
+  background-image: $error-color;
+  text-shadow: 0 0 24px #0000008f;
+}
+[lune~="grad:success"] {
+  background-image: $success-color;
+  text-shadow: 0 0 24px #0000008f;
+}
+[lune~="grad:warn"] {
+  background-image: $warn-color;
+  text-shadow: 0 0 24px #0000008f;
+}
+
+[lune~="back:info"] {
+  background-color: #0093e9;
+}
+[lune~="back:warn"] {
+  background-color: #e2c258;
+}
+[lune~="back:success"] {
+  background-color: #37c77f;
+}
+[lune~="back:error"] {
+  background-color: #e55d4d;
+}
+
+
+// Hover
+[lune~="hover?grad:info"]:hover {
+  background-image: $info-color;
+  text-shadow: 0 0 24px #0000008f;
+}
+[lune~="hover?grad:error"]:hover {
+  background-image: $error-color;
+  text-shadow: 0 0 24px #0000008f;
+}
+[lune~="hover?grad:success"]:hover {
+  background-image: $success-color;
+  text-shadow: 0 0 24px #0000008f;
+}
+[lune~="hover?grad:warn"]:hover {
+  background-image: $warn-color;
+  text-shadow: 0 0 24px #0000008f;
+}
+
+[lune~="hover?back:info"]:hover {
+  background-color: #0093e9;
+}
+[lune~="hover?back:warn"]:hover {
+  background-color: #e2c258;
+}
+[lune~="hover?back:success"]:hover {
+  background-color: #37c77f;
+}
+[lune~="hover?back:error"]:hover {
+  background-color: #e55d4d;
+}
