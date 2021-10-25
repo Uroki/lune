@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>  
+  <!-- Primary Meta Tags -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Uroki @ Lune UI</title>
-  <link rel="stylesheet" href="css/lune.css" />
+  <meta name="title" content="Uroki @ Lune UI">
+  <meta name="description" content="A lightweight and modern front-end framework for fast and pretty web interfaces.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uroki.github.io/lune/">
+  <meta property="og:title" content="Uroki @ Lune UI">
+  <meta property="og:description"
+    content="A lightweight and modern front-end framework for fast and pretty web interfaces.">
+  <meta property="og:image" content="assets/images/whatever.webp">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://uroki.github.io/lune/">
+  <meta property="twitter:title" content="Uroki @ Lune UI">
+  <meta property="twitter:description"
+    content="A lightweight and modern front-end framework for fast and pretty web interfaces.">
+  <meta property="twitter:image" content="assets/images/whatever.webp">
+
+  <meta name="robots" content="all, index, follow" />
+  <meta name="author" content="Uroki" />
+  <meta property="article:author" content="Uroki" />
+  <meta itemprop="author" content="Uroki" />
+  <meta itemprop="publisher" content="Uroki" />
+  <meta name="application-name" content="Lune UI" />
+  <meta name="theme-color" content="#1a1b1d" />
+
+  <link rel="stylesheet" href="dist/lune.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="assets/site.webmanifest">
 </head>
 
 <body>
@@ -28,18 +61,45 @@
     </div>
     <div lune="body">
       <a lune="title href space:6 font:16" href="#introduction">Intro</a>
-      <div id="introduction" lune="flex row wrap space:e space:2 align:center">
-        <div lune="box capital maxwidth:240 padding:24 font:11">
-          <b lune="font:18">Lune</b>
-          is a small CSS library used to create a pretty interface with short queries.
-        </div>
-        <div lune="box capital maxwidth:240 padding:24 font:11">
-          this library is open-source and this site is an example of the UI
-          <a href="https://github.com/uroki/lune" lune="button back:error">Source</a>
+      <div id="introduction" lune="flex center space:2">
+        <div lune="box minwidth:240 padding:32 font:12 flex column center capital">
+          <b lune="font:18 space:4">Lune UI</b>
+          A small CSS library used to create a pretty interface with short queries.
+          <div lune="line margin:24"></div>
+          <div lune="flex center">
+            <span lune="badge grad:success">16 kb</span>
+            <span lune="badge grad:success">javascript</span>
+            <span lune="badge grad:success">css</span>
+          </div>
+          <div lune="line margin:24"></div>
+          <div lune="flex center">
+            <span lune="badge back:info">note</span>this library is open-source and this site is an example of the UI
+          </div>
+          <div lune="flex center margin:24">
+            <span lune="badge back:warn">docs</span>I'm too lazy to create documents, so be patient D:
+          </div>
+          <div lune="flex">
+            <a href="https://github.com/uroki/lune" lune="button back:info margin:4">Source</a>
+            <a href="https://github.com/Uroki/lune/tree/main/examples" lune="button back:success margin:4">Examples</a>
+          </div>
         </div>
       </div>
       <a lune="title href space:6 font:16" href="#installation">Install</a>
-      <div id="installation" lune="font:14 space:2 align:center"></div>
+      <div id="installation" lune="flex center space:2">
+        <div lune="box minwidth:240 padding:24 font:13 flex column capital">
+          Copy & Paste the stylesheet &lt;link&gt; into your &lt;head&gt; before all other stylesheets.
+          <pre lune="code copy:0 selectable">
+            <code lune="lower">&lt;!-- Lune CSS --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/uroki/lune@1.0.0/dist/lune.min.css" /&gt;</code>
+          </pre>
+          Place the following &lt;script&gt; near the end of your pages, right before the closing &lt;/body&gt; tag.
+          <pre lune="code copy:0 selectable">
+            <code lune="lower">&lt;!-- Lune JS --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/uroki/lune@1.0.0/dist/lune.min.js"&gt;&lt;/script&gt;
+</code>
+          </pre>
+        </div>
+      </div>
       <a lune="title href space:6 font:16" href="#components">Components</a>
       <div id="components" lune="flex row center font:14 space:2 align:center">
         <div lune="box font:24 padding:16">
@@ -61,14 +121,14 @@
           Card
           <div id="card" lune="flex  row space:e wrap">
             <div lune="card width:240">
-              <img src="assets/images/fb79fb2bbe65429bb33832e845596709.png" alt="" />
+              <img src="assets/images/whatever.webp" alt="" />
               <h1>Post Title</h1>
               <h2>Post Desc</h2>
               <span>2021.10.20 | 10:00 AM | 3 Min Read</span>
               <a lune="button" href="#whatever">Read</a>
             </div>
             <div lune="card width:240">
-              <img src="assets/images/fb79fb2bbe65429bb33832e845596709.png" alt="" />
+              <img src="assets/images/whatever.webp" alt="" />
               <h1>Post Title</h1>
               <h2>Post Desc</h2>
               <span>2021.10.20 | 10:00 AM | 3 Min Read</span>
@@ -128,18 +188,21 @@
           <div lune="line"></div>
           JavaScript
           <div id="javascript" lune="flex row space:e wrap">
-            <button lune="button" onclick="Lune.Alert({ title: 'Alert Title', body: 'Alert Body' });">
+            <button lune="button padding:4 width:80 back:info"
+              onclick="Lune.Alert({ title: 'Alert Title', body: 'Alert Body' });">
               Show Alert
             </button>
-            <button lune="button" onclick="Lune.Message('Message Text', 'Message Type', 50000);">
+            <button lune="button padding:4 width:100 back:info"
+              onclick="Lune.Message('Message Text', 'Message Type', 50000);">
               Show Message
             </button>
           </div>
         </div>
       </div>
-      <div lune="footer flex space:4 center line:64 back:0000001f color:ffffff8f font:14">Uroki RT &copy; 2021</div>
+      <div lune="footer flex space:4 center line:64 back:0000001f color:ffffff8f font:14">Uroki RT &copy; <span
+          lune="date:year"></span></div>
     </div>
-    <script src="js/lune.js"></script>
+    <script src="dist/lune.min.js"></script>
 </body>
 
 </html>

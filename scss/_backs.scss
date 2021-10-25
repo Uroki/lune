@@ -19,7 +19,7 @@
   background-color: #0093e9;
 }
 [lune~="back:warn"] {
-  background-color: #e2c258;
+  background-color: #ff9477;
 }
 [lune~="back:success"] {
   background-color: #37c77f;
@@ -33,29 +33,37 @@
 [lune~="hover?grad:info"]:hover {
   background-image: $info-color;
   text-shadow: 0 0 24px #0000008f;
+  opacity: 1;
 }
 [lune~="hover?grad:error"]:hover {
   background-image: $error-color;
   text-shadow: 0 0 24px #0000008f;
+  opacity: 1;
 }
 [lune~="hover?grad:success"]:hover {
   background-image: $success-color;
   text-shadow: 0 0 24px #0000008f;
+  opacity: 1;
 }
 [lune~="hover?grad:warn"]:hover {
   background-image: $warn-color;
   text-shadow: 0 0 24px #0000008f;
+  opacity: 1;
 }
 
 [lune~="hover?back:info"]:hover {
   background-color: #0093e9;
+  opacity: 1;
 }
 [lune~="hover?back:warn"]:hover {
   background-color: #e2c258;
+  opacity: 1;
 }
 [lune~="hover?back:success"]:hover {
   background-color: #37c77f;
+  opacity: 1;
 }
 [lune~="hover?back:error"]:hover {
   background-color: #e55d4d;
+  opacity: 1;
 }

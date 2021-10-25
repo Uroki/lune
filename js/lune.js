@@ -189,7 +189,7 @@ const _getLuneData = (el) => {
       },
       !1
     );
-    button.style.cssText = `position: fixed;top: 8px;right: 8px;margin: 0;`;
+    button.style.cssText = `position: fixed;top: 8px;right: 8px;margin: 0;font-size: 9px;padding: 4px 8px;line-height: 16px;`;
     el.appendChild(button);
   });
 })();
@@ -208,7 +208,7 @@ const _getLuneData = (el) => {
 })();
 
 /**
- * Uroki Lune
+ * Lune UI Handler
  */
 const Lune = (() => {
   function Alert({
